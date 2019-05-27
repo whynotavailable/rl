@@ -1,12 +1,12 @@
 PROG=game
 CC=g++
-CPPFLAGS=-Wc++11-extensions
+CPPFLAGS=
 LDFLAGS=-lncurses
 SRC=$(wildcard *.cpp)
 OBJS=$(SRC:.cpp=.o)
 
 $(PROG): $(OBJS)
-	$(CC) $(LDFLAGS) -o $(PROG) $(OBJS)
+	$(CC) -o $(PROG) $(OBJS) $(LDFLAGS)
 .cpp.o:
 	$(CC) $(CPPFLAGS) -c $< -o $@
 clean:
