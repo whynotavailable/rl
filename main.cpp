@@ -21,7 +21,15 @@ int main () {
 
   refresh();
   move(0,0);
-  while(getch() != 'q') {}
+  int ch = 0;
+  do
+  {
+    ch = getch();
+    if (ch == 'r') {
+      l->generate();
+      l->draw();
+    }
+  } while (ch != 'q');
   endwin();
   return 0;
 }
