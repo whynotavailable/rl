@@ -1,5 +1,6 @@
 #include <ncurses.h>
 #include "player.h"
+#include "level.h"
 
 int main () {
   // setup start
@@ -9,9 +10,10 @@ int main () {
   keypad(stdscr, TRUE);
   // setup end
 
-  Player *p = new Player();
-  p->move(1, 0);
-  printw("Hello World, lol");
+  Level *l = new Level();
+  l->generate();
+  l->draw();
+
   refresh();
   getch();
   getch();
