@@ -1,0 +1,34 @@
+#+TITLE: My RL
+#+AUTHOR: T.H. Taft
+
+* Introduction
+
+I am building a game. It'll be a roguelike, however not a traditional one. I don't
+so much care about traditional rules for games. So I'm pretty much doing what I want.
+I'll be putting in here, what my design will be while I experiment with c++ again
+until I am ready to begin.
+
+* Features Overview
+
+A high level list of features I'd like to have (in no particular order). The goal is
+to expand upon these in later parts of the document as the design.
+
+- Randomized Levels
+- Turn based combat
+- Crafting (items, equipment, potions)
+- Magic
+- Classless (try this)
+- Overworld
+- Several dungeons/towers of varying depths
+
+* Features
+
+** Classful
+
+You start off as a normal person. If you use a weapon type you get it's skill. If you join a magic guild / church
+you can learn the magic / prayer skills. You must use skills in combat to increase them.
+
+Your level gets to stats (which you need to spend), skills allow to access to abilities/proficiencies.
+
+I high level in magic will get you better spells, however a high long-sword skill will drasticly increase damage/parry
+with long swords. You can level as many skills as you want, but you can only gain 20? levels.
