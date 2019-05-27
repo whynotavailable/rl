@@ -6,6 +6,8 @@ struct Room
 {
   short posX;
   short posY;
+  
+  // these are how much space a room has not the actual size
   short height;
   short width;
 };

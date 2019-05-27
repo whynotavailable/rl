@@ -1,6 +1,6 @@
 PROG=game
 CC=g++
-CPPFLAGS=
+CPPFLAGS=-Wc++11-extensions
 LDFLAGS=-lncurses
 SRC=$(wildcard *.cpp)
 OBJS=$(SRC:.cpp=.o)
